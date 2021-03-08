@@ -1,0 +1,90 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<h1>HELLO</h1>
+{{appName}}
+<h2>name</h2>
+<h2>{{name}}</h2>
+{{getName()}}
+<br>
+<h1 style="color: aqua;">{{obj.age}}</h1>
+<h1 style="color: rgb(255, 115, 0);">{{arr[1]}}</h1>
+Length of arr {{arr.length}} <br>
+sum {{(num1+num2)}} <br>
+u can not assign anything in .html
+<!-- {{(a=8)}} -->
+<h1 style="color: rgb(100, 100, 212)">{{siteUrl}}</h1>
+<!-- {{window.location.href}}    -->
+u can not even write window prop. here
+<!-- "The sum of 1 + 1 is not 4" -->
+<p>The sum of 1 + 1 is not {{1+myEvent(1,1)}}.</p>
+<app-practice >compononent works</app-practice>
+<!-- <button (click)="myEvent()">Click</button> -->
+<app-first>FIRST TAG</app-first>
+<app-second>SECOND TAG</app-second>
+
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">my modal</button>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>            
+                <div class="modal-body">
+                    body
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>                    
+            </div>
+        </div>
+    </div> -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        Open modal
+    </button>
+      
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Modal Heading</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+              Modal body..
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+<nav>
+    <ul>
+      <!-- <li><a routerLink="/">Empty homepage</a></li> -->
+      <li><a routerLink="practice">practice</a></li>
+
+      <li><a routerLink="first">First</a></li>
+      <li><a routerLink="second">Second</a></li>
+    </ul>
+  </nav>
+  <hr />
+  <router-outlet></router-outlet>
